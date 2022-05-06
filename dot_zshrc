@@ -118,6 +118,7 @@ autoload -U add-zsh-hook
 PROMPT="%(?:%{$fg_bold[green]%}➜ :%{$fg_bold[red]%}➜ ) %{$fg[cyan]%}%c%{$reset_color%}: "
 
 PATH="/usr/local/sbin:$PATH"
-PATH="/usr/local/opt/postgresql@13/bin:$PATH"
+PATH="/Applications/Sublime Text.app/Contents/SharedSupport/bin:$PATH"
+export PATH="/usr/local/opt/postgresql@13/bin:$PATH"
 
 . /usr/local/opt/asdf/libexec/asdf.sh
