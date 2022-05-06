@@ -66,8 +66,6 @@ plugins=(
   docker-aliases
   docker-compose
   history
-  macos
-  # sublime
   per-directory-history
   zsh-autosuggestions
   zsh-navigation-tools
