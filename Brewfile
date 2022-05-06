@@ -15,11 +15,7 @@ brew "asdf"
 brew "git"
 brew "imagemagick"
 brew "postgresql@13", restart_service: true
-brew "tfenv"
-brew "rbspy"
 brew "redis", restart_service: true
-brew "wget"
-brew "zsh"
 brew "heroku"
 brew "heroku/brew/heroku-node"
 brew "puma/puma/puma-dev"
