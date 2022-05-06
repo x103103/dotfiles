@@ -1,0 +1,3 @@
+---
+BUNDLE_JOBS: "6"
+BUNDLE_GEM__TEST: "rspec"
