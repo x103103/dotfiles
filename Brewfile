@@ -19,9 +19,11 @@ brew "redis", restart_service: true
 brew "heroku"
 brew "heroku/brew/heroku-node"
 brew "puma/puma/puma-dev"
+brew "tfenv"
 
 
 cask "chromedriver"
+cask "google-drive"
 cask "bluesnooze"
 cask "iterm2"
 cask "ngrok"
@@ -29,6 +31,7 @@ cask "unnaturalscrollwheels"
 # cask "wkhtmltopdf"
 
 # AWS
+brew "awscli"
 # brew "cfn-lint"
 # brew "cloudformation-guard"
 
