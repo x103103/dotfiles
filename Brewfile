@@ -5,6 +5,7 @@ tap "homebrew/cask-versions"
 tap "homebrew/core"
 tap "homebrew/services"
 tap "puma/puma"
+tap "aws/tap"
 
 brew 'chezmoi'
 brew "bash"
@@ -32,6 +33,7 @@ cask "unnaturalscrollwheels"
 
 # AWS
 brew "awscli"
+brew "aws-sam-cli"
 # brew "cfn-lint"
 # brew "cloudformation-guard"
 
