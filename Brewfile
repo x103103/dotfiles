@@ -1,39 +1,35 @@
 tap "heroku/brew"
 tap "homebrew/bundle"
-tap "homebrew/cask"
-tap "homebrew/cask-versions"
-tap "homebrew/core"
 tap "homebrew/services"
 tap "puma/puma"
-tap "aws/tap"
+tap "cloudflare/cloudflare"
 
-brew 'chezmoi'
-brew "bash"
-brew "zsh"
-brew "wget"
-brew "curl"
 brew "asdf"
+brew "chezmoi" # dotfiles manager
 brew "git"
 brew "imagemagick"
-brew "postgresql@13", restart_service: true
+brew "vips" # image processing
+brew "postgresql@15", restart_service: true, link: true
 brew "redis", restart_service: true
 brew "heroku"
-brew "heroku/brew/heroku-node"
+# brew "heroku/brew/heroku-node"
 brew "puma/puma/puma-dev"
-brew "tfenv"
+brew "cloudflare/cloudflare/cloudflared", link: true
 
-
-cask "chromedriver"
-cask "google-drive"
 cask "bluesnooze"
-cask "iterm2"
+# https://github.com/actuallymentor/battery/
+# cask "battery"
 cask "ngrok"
-cask "unnaturalscrollwheels"
-# cask "wkhtmltopdf"
+# cask "unnaturalscrollwheels"
+# cask "handbrake" # video converter
+cask "warp" # terminal
+cask "wkhtmltopdf"
 
-# AWS
+# DevOps
+brew "tfenv"
 brew "awscli"
-brew "aws-sam-cli"
+cask "session-manager-plugin"
+# brew "aws-sam-cli"
 # brew "cfn-lint"
 # brew "cloudformation-guard"
 
@@ -45,4 +41,5 @@ brew "gawk"
 # asdf ruby
 brew "ruby-build"
 brew "openssl@1.1"
+brew "openssl@3"
 brew "readline"
